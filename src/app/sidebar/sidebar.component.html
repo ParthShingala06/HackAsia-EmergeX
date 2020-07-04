@@ -1,0 +1,55 @@
+<div class="sidebar-wrapper" style="background-image: linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0)); opacity: 100%;">
+    <div class="logo">
+        <a href="./#/maps" class="simple-text" style="padding-left:30px ;font-weight: 800;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+            <div class="logo-img">
+                <img src="/assets/img/company-logo-transparent-png-19.png" />
+            </div>
+            EmergeX
+        </a>
+
+    </div>
+    <ul class="nav responsive-nav">
+        <li class="dropdown" *ngIf="isMobileMenu()">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-globe"></i>
+                <b class="caret hidden-sm hidden-xs"></b>
+                <span class="notification hidden-sm hidden-xs">5</span>
+                <p class="hidden-lg hidden-md">
+                    Notifications
+                    <b class="caret"></b>
+                </p>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Notification 1</a></li>
+                <li><a href="#">Notification 2</a></li>
+                <li><a href="#">Notification 3</a></li>
+                <li><a href="#">Notification 4</a></li>
+                <li><a href="#">Another notification</a></li>
+            </ul>
+        </li>
+
+        <li *ngIf="isMobileMenu()">
+            <a>
+                <p>Log out</p>
+            </a>
+        </li>
+        <li class="separator hidden-lg hidden-md" *ngIf="isMobileMenu()"></li>
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="{{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+    <div style="padding-top: 55%;">
+        <a href="">
+            <div style="padding-left: 20%;padding-top: 3%;">
+                <img height="35px" src="https://hackasia.s3.ap-east-1.amazonaws.com/statics/challenges/logos/accenture-logo.png" />
+            </div>
+            <h7 style="color: cornsilk; font-size: smaller;padding-left: 35%;">Powered</h7>
+
+
+        </a>
+    </div>
+
+</div>

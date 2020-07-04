@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="sidebar" data-color="black" data-image="">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-background" style="background-image: url(assets/img/b8d8b33d4f60b299cb4ce6bec3c5bac8.jpg);"></div>
+    </div>
+
+    <div class="main-panel">
+        <navbar-cmp></navbar-cmp>
+        <router-outlet></router-outlet>
+        <div *ngIf="isMap('maps')">
+            <footer-cmp></footer-cmp>
+        </div>
+    </div>
+
+</div>
