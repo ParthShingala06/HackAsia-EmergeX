@@ -40,26 +40,27 @@ export class HomeComponent implements OnInit {
 
       this.hoursChartType = ChartType.Line;
       this.hoursChartData = {
-        labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
+        labels: ['Day 0', 'Day 2', 'Day 4', 'Day 6', 'Day  8', 'Day 10', 'Day 12', 'Day 14' , 'Day 16' , 'Day 18' , 'Day 20' ],
         series: [
-          [287, 385, 490, 492, 554, 586, 698, 695, 752, 788, 846, 944],
-          [67, 152, 143, 240, 287, 335, 435, 437, 539, 542, 544, 647],
-          [23, 113, 67, 108, 190, 239, 307, 308, 439, 410, 410, 509]
+          [1250, 1254, 1254, 1334, 1212, 1210, 1380, 1200, 1160, 1245, 1150, 1100],
+          [1150, 1024, 1004, 1114, 1052, 1010, 1100, 1060, 1060, 915, 1050, 910],
+          
+          [23, 13, 27, 18, 19, 9, 7, 8, 9, 10, 10, 9]
         ]
       };
       this.hoursChartOptions = {
         low: 0,
-        high: 800,
+        high: 1500,
         showArea: true,
         height: '245px',
         axisX: {
-          showGrid: false,
+          showGrid: true,
         },
         lineSmooth: Chartist.Interpolation.simple({
           divisor: 3
         }),
         showLine: false,
-        showPoint: false,
+        showPoint: true,
       };
       this.hoursChartResponsive = [
         ['screen and (max-width: 640px)', {
@@ -71,9 +72,9 @@ export class HomeComponent implements OnInit {
         }]
       ];
       this.hoursChartLegendItems = [
-        { title: 'Open', imageClass: 'fa fa-circle text-info' },
-        { title: 'Click', imageClass: 'fa fa-circle text-danger' },
-        { title: 'Click Second Time', imageClass: 'fa fa-circle text-warning' }
+        { title: 'Active Cases', imageClass: 'fa fa-circle text-info' },
+        { title: 'Recoveries', imageClass: 'fa fa-circle text-danger' },
+        { title: 'Deaths', imageClass: 'fa fa-circle text-warning' }
       ];
 
       this.activityChartType = ChartType.Bar;

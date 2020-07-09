@@ -13,6 +13,8 @@ import { MedcertComponent } from '../../medcert/medcert.component';
 import { IdcardComponent } from '../../idcard/idcard.component';
 import { FlightsComponent } from '../../flights/flights.component';
 import { HotelComponent } from '../../hotel/hotel.component';
+import { AirlistComponent } from '../../airlist/airlist.component';
+import { SeatmapComponent } from '../../seatmap/seatmap.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -26,7 +28,10 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'destination',        component: DestinationComponent },
     { path: 'medcert',        component: MedcertComponent },
-    { path: 'idcar',        component: IdcardComponent },
+    { path: 'idcard',        component: IdcardComponent },
     { path: 'flights',        component: FlightsComponent },
     { path: 'hotel',        component: HotelComponent },
+    { path: 'airlist',        component: AirlistComponent },
+    { path: 'seatmap',        component: SeatmapComponent },
+
 ];

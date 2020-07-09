@@ -35,7 +35,7 @@
 
 ## [1.0.1] - 2017-02-13
 ### small fix
-- changes in routes(redirect '' to 'dashboard' + added HashLocationStrategy)
+- changes in routes(redirect '' to 'destination' + added HashLocationStrategy)
 - changes in documentation
 - changes in sidebar(cleaned li tags + changed z-index)
 - changes in footer(added current date)
