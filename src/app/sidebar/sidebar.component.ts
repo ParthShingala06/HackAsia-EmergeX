@@ -11,7 +11,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/destination', title: 'Destination Updates',  icon:'pe-7s-map-marker', class: '' },
     { path: '/flights', title: 'Flights',  icon:'pe-7s-plane', class: '' },
     { path: '/user', title: 'User Profile',  icon:'pe-7s-user', class: '' },
-    { path: '/typography', title: 'History',  icon:'pe-7s-news-paper', class: '' },
     { path: '/notifications', title: 'Notifications',  icon:'pe-7s-bell', class: '' },
     { path: '/hotel', title: 'Service and Hospitality',  icon:'pe-7s-map-2', class: '' },
     { path: '/idcard', title: 'Boarding Pass',  icon:'pe-7s-id', class: '' },

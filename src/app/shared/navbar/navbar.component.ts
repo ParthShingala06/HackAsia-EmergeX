@@ -8,11 +8,14 @@ import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common'
     templateUrl: 'navbar.component.html'
 })
 
+
 export class NavbarComponent implements OnInit{
     private listTitles: any[];
     location: Location;
     private toggleButton: any;
     private sidebarVisible: boolean;
+    publisher: string = '';
+
 
     constructor(location: Location,  private element: ElementRef) {
       this.location = location;
