@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-## Terminal Commands
-
-1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
-2. Open Terminal
-3. Go to your file project
-4. Run in terminal: ```npm install -g @angular/cli```
-5. Then: ```npm install```
-6. And: ```ng serve```
-7. Navigate to `http://localhost:4200/`
-
->>>>>>> ca6bd4153bb4aac1544bf7e49b63c399234f287c
-=======
 ____________________________________
 
 Secured a position among global top 10 finalists in the Accenture Challenge with this project, a collaboration powered by Microsoft and HSBC, as part of the HackAsia 2020 event held in Hong Kong.
@@ -33,4 +18,3 @@ ____________________________________
 5. Then: ```npm install```
 6. And: ```ng serve```
 7. Navigate to `http://localhost:4200/`
->>>>>>> f35ff2a3a553e32d816d0b5abc524e9a279f0272
